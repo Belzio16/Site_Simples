@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulario</title> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Teste-01/Organicao/Audio.HTLM">
+</head>
+
+<body>
+    
+    <form action="castro.php" method="GET">
+
+    <fieldset>
+    <legend>INFORMACOES PESSOAIS</legend> 
+    Nome:<br>
+    <input type= "text" name="nome" required autofocus maxlength="500"><br>
+    Senha:<br>
+    <input type="password" name="senha"><br>
+    Email:<br>
+    <input type="email" name="email" autocomplete="on" placeholder="seuemail@gmail.com"><br>
+    
+        semana:<br>
+        <input type = "week" name="semana"><br><br>
+        Mensagem:<br>
+        <textarea name="mensagem" rows="5" cols="30"></textarea> 
+        <button type="button">Clique aqui</button>
+
+       
+    imagem:<br><br>
+    <input type="file" name="imagem"><br><br>
+    <input type="hidden" name="id"><br><br>
+         Data:<br>
+         <input type="date" name="data" min="1600-12-31" max="20100-12-31"><br><br>
+    URL:
+    <input type="url" name="site"><br><br>
+
+    Search:<br>
+    <input type="search" name="pesquisa"><br>
+    Telefone:<br>
+    <input type="tel" name="telefone">
+
+    PAIS:<br>
+    <input type="radio" name value="angola"> Angola <br>
+    <input type="radio" name value="portugal"> Portugal <br>
+    <input type="radio" name value="brasil"> Brasil <br>
+    <input type="radio" name value="rdc"> R.D.C <br>
+    cores:<br>
+    <input type="checkbox" name="cores" value="perto"> Preto <br>
+    <input type="checkbox" name="cores" value="Vernelho">Vernelho<br>
+    <input type="checkbox" name="cores" value="Azul" > Azul <br>
+    <input type="checkbox" name="cores" value="Amarelo">Amarelo<br>
+    <input type="submit" name="btn-enviar" value="Enviar">
+
+    Quantidade: <br>
+    <input type="nunber" name="quantidade" min="0" max="500">
+<br>
+<input type="range" name="quantidade">
+
+Cor:<br>
+<input type="color" name="cor">
+
+</fieldset>
+</form>
+</body>
+
+
+</html>
