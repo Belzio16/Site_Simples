@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Clinica da Mulher BIT</h1>
+        <nav>
+            <h1>Clinica da Mulher BIT</h1>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="box-img">
-            <img src="img/Doctora1.webp">
+            <img class="responsiva" id="doutora" src="img/Doctora1.webp">
         </div>
         
         
@@ -27,9 +34,45 @@
               neque 
         dolorem eum ex mollitia aperiam quidem 
         incidunt libero.</p>
-        <a href="#" class="btn-hero"> Marcar Consulta</a>
+        <a href="https://web.whatsapp.com/" class="btn-hero"> Marcar Consulta</a>
         </div>
-        
     </section>
+
+        <section class="especialidade" id="especialidades">
+        <div class="box-item">
+            <h3>Especialidades 1</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi inventore ut ab quaerat officiis at eius aliquam reiciendis, repellendus atque soluta esse voluptates odit corrupti, maxime possimus? Non, sint aspernatur.</p>
+        </div>
+
+        <div class="box-item">
+            <h3>Especialidades 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt porro sit et fugiat vitae temporibus animi cumque doloribus ipsa at. Harum aperiam quibusdam quo eligendi perferendis perspiciatis repellendus repellat repudiandae.</p>
+        </div>
+
+        <div class="box-item">
+            <h3>Especialidades 3</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, necessitatibus nesciunt quae nostrum consequuntur perferendis repellendus a veritatis dolore numquam laboriosam at ut molestiae id. Quod nostrum dolore a fuga?</p>
+        </div>
+        <a href="https://web.whatsapp.com/" class="m-top btn-hero"> Marcar Consulta</a>
+
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para agendar sua consulta.</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@clinicadamulherbit.com</p>
+    </section>
+
+    <footer>
+       <p>2026 CLINICA DA MULHER BIT, TODOS OS DIREITOS RESERVADOS.©</p> 
+    </footer>
+    
+    <div class="whats">
+        <a target="_blank" href="https://web.whatsapp.com/">
+    <img width="50" src="img/RosaNit.webp">
+    </a>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

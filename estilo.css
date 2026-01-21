@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     
@@ -20,12 +21,35 @@ header{
  
 }
 
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
 header h1{
     font-size: 60px;
     color: white;
     font-family: "Yesteryear", cursive;
     font-weight: normal;
+    margin: 0;
+}
 
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .hero{
@@ -33,21 +57,26 @@ header h1{
     justify-content: center;
     align-items: center;
     height: 650px;
-    border: 1px solid red;
+    width: 100%;
+    /*border: 1px solid red;*/
 }
 .box-img{
     display: flex;
     justify-content: center;
     width: 35%;
-    border:1px solid blue;
+   /* border:1px solid blue; */
 
 }
 .box-txt{
     display: flex;
     flex-flow: row wrap;
     width: 35%;
-    border:1px solid green;
+    /* border:1px solid green; */ 
 
+}
+
+.responsiva{
+    max-width: 100%;
 }
 .box-txt span{
     color: gray;
@@ -66,6 +95,7 @@ header h1{
 
 .box-txt p{
     color: gray;
+    margin-bottom: 30px;
 }
 .btn-hero{
     background-color: #ce4ec4;
@@ -79,5 +109,116 @@ header h1{
 }
 
 .btn-hero:hover{
-    background: green;
+    background: #a83da1;
+}
+.especialidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    /*border: 1px solid red;*/ 
+}
+.m-top{
+    margin-top: 30px;
+}
+footer{
+    display: flex;
+    margin-top: 100px;
+    background: #e8aae3;
+    height: 150px;
+    color: white;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato{
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.contato h2{
+    color: #ce44c3;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contato p{
+    font-size: 18px;
+    color: gray;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1200px) {
+
+    header h1{
+        font-size: 45px;
+    }
+    header nav{
+        width: 95%;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .box-txt{
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 40px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-txt h2{
+        font-size: 50px;
+    }
+
+    .box-txt p {
+        text-align: center;
+    }
+
+    .box-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .box-item{
+        width: 95%;
+    }
+    footer {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1{
+        font-size: 35px;
+    }
+    header nav{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    header ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .hero{
+        height: auto;
+        padding: 20px 0;
+    }
+    .box-txt h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .box-item{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .especialidade{
+        width: 90%;
+        margin-left: 5%;
+    }
 }
